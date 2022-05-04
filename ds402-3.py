@@ -9,17 +9,13 @@ st.title('Price of Anarchy Implementation')
 st.header('Jiso Awe & Thomas Schindler')
 st.write('This is our interface for our Data Science 402 final project.')
 
-option = st.selectbox(
-'What type of matrix would you like to test prisoners dilemma on?',
-('1x1', '2x2'))
+"st.session_state object:", st.session_state
 
-st.write('You selected:', option)
+##clicked1 = st.button('1x1')
 
 
-
-
-
-if option == '1x1':
+if st.button('2x2'):
+    print('Type in your four desired payoffs')
 
     Pa1 = int(input())
     Pa2 = int(input())
@@ -45,7 +41,10 @@ if option == '1x1':
     B = np.array([[Pb1,Pb2], [Pb3,Pb4]])
     rps = nash.Game(A,B)
 
-elif option == '2x2':
+
+
+if st.button('3x3'):
+    print('Type in your nine desired payoffs')
 
     Pa1 = int(input())
     Pa2 = int(input())
@@ -85,6 +84,17 @@ elif option == '2x2':
     A = np.array([[Pa1,Pa2,Pa3], [Pa4,Pa5,Pa6], [Pa7,Pa8,Pa9]])
     B = np.array([[Pb1,Pb2,Pb3], [Pb4,Pb5,Pb6], [Pb7,Pb8,Pb9]])
     rps = nash.Game(A,B)
+
+
+
+'''
+option = st.selectbox(
+'What type of matrix would you like to test prisoners dilemma on?',
+('1x1', '2x2', '3x3'))
+
+st.write('You selected:', option)
+'''
+
 print(rps)
 
 equilibrium = []
