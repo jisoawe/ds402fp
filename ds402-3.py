@@ -1,4 +1,4 @@
-install_reqs = parse_requirements('requirements.txt')
+#install_reqs = parse_requirements('requirements.txt')
 
 from ast import Return
 from re import X
