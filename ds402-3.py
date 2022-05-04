@@ -1,9 +1,7 @@
-#git+https://github.com/drvinceknight/Nashpy.git
-
 from ast import Return
 from re import X
 import streamlit as st
-#import nashpy as nash
+import nashpy as nash
 import numpy as np
 
 
