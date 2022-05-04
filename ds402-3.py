@@ -1,5 +1,6 @@
 from ast import Return
 from re import X
+from nashpy
 import streamlit as st
 import nashpy as nash
 import numpy as np
