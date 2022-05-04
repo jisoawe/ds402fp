@@ -4,8 +4,11 @@ st.title('Price of Anarchy Implementation')
 st.header('Jiso Awe & Thomas Schindler')
 st.write('This is our interface for our Data Science 402 final project.')
 
-option = st.selectbox(
-'What type of matrix would you like to test prisoners dilemma on?',
-('1x1', '2x2'))
+if st.button('2x2'):
+    st.write('Type in your four desired payoffs')
 
-st.write('You selected:', option)
+elif st.button('3x3'):
+    st.write('Type in your nine desired payoffs')
+
+else:
+    st.write('lit')
