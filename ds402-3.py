@@ -1,3 +1,5 @@
+install_reqs = parse_requirements('requirements.txt')
+
 from ast import Return
 from re import X
 import streamlit as st
@@ -11,10 +13,16 @@ st.write('This is our interface for our Data Science 402 final project.')
 
 "st.session_state object:", st.session_state
 
+col1, buff, col2 = st.beta_columns([2,1,2])
+
+with col1:
+    PO1 = st.number_input('PO1:', key= 'PO2',
+    on_click = someChangeFunc)
+
 ##clicked1 = st.button('1x1')
 
 
-if st.button('2x2'):
+def twob2(*arguments):
     st.write('Type in your four desired payoffs')
 
     Pa1 = int(input())
@@ -84,6 +92,7 @@ elif st.button('3x3'):
     A = np.array([[Pa1,Pa2,Pa3], [Pa4,Pa5,Pa6], [Pa7,Pa8,Pa9]])
     B = np.array([[Pb1,Pb2,Pb3], [Pb4,Pb5,Pb6], [Pb7,Pb8,Pb9]])
     rps = nash.Game(A,B)
+
 
 
 st.write(rps)
