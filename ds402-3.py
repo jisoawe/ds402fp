@@ -88,15 +88,6 @@ elif st.button('3x3'):
     rps = nash.Game(A,B)
 
 
-
-'''
-option = st.selectbox(
-'What type of matrix would you like to test prisoners dilemma on?',
-('1x1', '2x2', '3x3'))
-
-st.write('You selected:', option)
-'''
-
 st.write(rps)
 
 equilibrium = []
