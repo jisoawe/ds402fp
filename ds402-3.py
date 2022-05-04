@@ -11,14 +11,15 @@ st.write('This is our interface for our Data Science 402 final project.')
 
 option = st.selectbox(
 'What type of matrix would you like to test prisoners dilemma on?',
-('1x1', '2x2', '3x3'))
+('1x1', '2x2'))
 
 st.write('You selected:', option)
 
 
-type = int(input())
 
-if type == 1:
+
+
+if option == '1x1':
 
     Pa1 = int(input())
     Pa2 = int(input())
@@ -44,7 +45,7 @@ if type == 1:
     B = np.array([[Pb1,Pb2], [Pb3,Pb4]])
     rps = nash.Game(A,B)
 
-if type == 2:
+elif option == '2x2':
 
     Pa1 = int(input())
     Pa2 = int(input())
