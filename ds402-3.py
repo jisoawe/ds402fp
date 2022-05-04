@@ -1,4 +1,4 @@
-git+https://github.com/drvinceknight/Nashpy.git
+#git+https://github.com/drvinceknight/Nashpy.git
 
 from ast import Return
 from re import X
