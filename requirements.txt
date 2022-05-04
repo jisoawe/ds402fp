@@ -1,5 +1,5 @@
-streamlit == 0.86.0
+streamlit
 
 git+https://github.com/drvinceknight/Nashpy.git
 
-numpy == 1.22.3
+numpy
