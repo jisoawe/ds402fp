@@ -1,6 +1,7 @@
+git+https://github.com/drvinceknight/Nashpy.git
+
 from ast import Return
 from re import X
-from nashpy import X
 import streamlit as st
 import nashpy as nash
 import numpy as np
@@ -16,7 +17,7 @@ st.write('This is our interface for our Data Science 402 final project.')
 
 
 if st.button('2x2'):
-    print('Type in your four desired payoffs')
+    st.write('Type in your four desired payoffs')
 
     Pa1 = int(input())
     Pa2 = int(input())
@@ -44,8 +45,8 @@ if st.button('2x2'):
 
 
 
-if st.button('3x3'):
-    print('Type in your nine desired payoffs')
+elif st.button('3x3'):
+    st.write('Type in your nine desired payoffs')
 
     Pa1 = int(input())
     Pa2 = int(input())
@@ -96,7 +97,7 @@ option = st.selectbox(
 st.write('You selected:', option)
 '''
 
-print(rps)
+st.write(rps)
 
 equilibrium = []
 
@@ -132,4 +133,4 @@ for i in equilibrium:
 nashs.sort()
 nashl = nashs[0]
 poa = po/nashl
-print(poa)
+st.write(poa)
