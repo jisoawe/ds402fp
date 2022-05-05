@@ -1,5 +1,0 @@
-streamlit
-
-git+https://github.com/drvinceknight/Nashpy.git
-
-numpy
