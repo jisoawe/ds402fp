@@ -1,3 +1,4 @@
+#git+https://github.com/drvinceknight/Nashpy.git
 #install_reqs = parse_requirements('requirements.txt')
 
 from ast import Return
@@ -19,10 +20,14 @@ with col1:
     PO1 = st.number_input('PO1:', key= 'PO2',
     on_click = someChangeFunc)
 
-##clicked1 = st.button('1x1')
+clicked2 = st.button('2x2')
+clicked3 = st.button('3x3')
+
+#st.button('2x2')
+#st.button('3x3')
 
 
-def twob2(*arguments):
+if clicked2:
     st.write('Type in your four desired payoffs')
 
     Pa1 = int(input())
@@ -51,7 +56,7 @@ def twob2(*arguments):
 
 
 
-elif st.button('3x3'):
+elif clicked3:
     st.write('Type in your nine desired payoffs')
 
     Pa1 = int(input())
@@ -93,6 +98,9 @@ elif st.button('3x3'):
     B = np.array([[Pb1,Pb2,Pb3], [Pb4,Pb5,Pb6], [Pb7,Pb8,Pb9]])
     rps = nash.Game(A,B)
 
+
+else:
+    st.write('click a button')
 
 
 st.write(rps)
