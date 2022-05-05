@@ -11,4 +11,4 @@ elif st.button('3x3'):
     st.write('Type in your nine desired payoffs')
 
 else:
-    st.write('lit')
+    st.write('click a button')
