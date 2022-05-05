@@ -13,8 +13,8 @@ st.header('Jiso Awe & Thomas Schindler')
 st.write('This is our interface for our Data Science 402 final project.')
 
 "st.session_state object:", st.session_state
-
-col1, buff, col2 = st.beta_columns([2,1,2])
+'''
+col1, buff, col2 = st.columns([2,1,2])
 
 with col1:
     PO1 = st.number_input('PO1:', key= 'PO2',
@@ -22,6 +22,8 @@ with col1:
 
 clicked2 = st.button('2x2')
 clicked3 = st.button('3x3')
+
+'''
 
 #st.button('2x2')
 #st.button('3x3')
