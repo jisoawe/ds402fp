@@ -19,11 +19,12 @@ col1, buff, col2 = st.columns([2,1,2])
 with col1:
     PO1 = st.number_input('PO1:', key= 'PO2',
     on_click = someChangeFunc)
+'''
 
 clicked2 = st.button('2x2')
 clicked3 = st.button('3x3')
 
-'''
+
 
 #st.button('2x2')
 #st.button('3x3')
